@@ -1,0 +1,198 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ── */
+
+.site-header {
+  padding: var(--space-md) var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-nav {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--color-text-muted);
+}
+
+.site-nav a:hover {
+  color: var(--color-text);
+}
+
+/* ── Main ── */
+
+.main-content {
+  flex: 1;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+  width: 100%;
+}
+
+/* ── Page header ── */
+
+.page-header {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.page-title {
+  font-family: var(--font-serif);
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-sm);
+}
+
+.page-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 560px;
+  line-height: 1.65;
+}
+
+/* ── Projects grid ── */
+
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── Project card ── */
+
+.project-card {
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color 0.15s ease;
+}
+
+.project-card:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+.project-card-inner {
+  padding: var(--space-md) 0;
+}
+
+.project-card:hover .project-card-inner {
+  padding-left: var(--space-xs);
+  transition: padding-left 0.15s ease;
+}
+
+/* ── Tags ── */
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-tag-text);
+  background: var(--color-tag-bg);
+  padding: 0.2rem 0.55rem;
+  border-radius: 2px;
+}
+
+/* ── Project title ── */
+
+.project-title {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+}
+
+/* ── Description ── */
+
+.project-description {
+  font-size: 0.97rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  max-width: 640px;
+  margin-bottom: var(--space-sm);
+}
+
+/* ── Links ── */
+
+.project-links {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.project-link {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--color-text-muted);
+  transition: color 0.1s ease;
+}
+
+.project-link:hover {
+  color: var(--color-text);
+}
+
+.project-link--demo {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.project-link--demo:hover {
+  color: var(--color-text-muted);
+}
+
+/* ── Footer ── */
+
+.site-footer {
+  padding: var(--space-md);
+  border-top: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-faint);
+}
+
+.site-footer a {
+  color: var(--color-text-faint);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--color-text-muted);
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .main-content {
+    padding: var(--space-md) var(--space-sm);
+  }
+
+  .project-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+}
