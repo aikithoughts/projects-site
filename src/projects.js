@@ -1,6 +1,6 @@
 // Curated list of projects to feature.
 // To add or remove a project, edit this file.
-// 'repo' must match the exact GitHub repository name.
+~/projects-site/src / projects.js// 'repo' must match the exact GitHub repository name.
 // 'demo' is optional — set to null if there's no live demo.
 
 const projects = [
@@ -33,6 +33,12 @@ const projects = [
     description: "An experiment in generating Art Deco–inspired geometric patterns and visual compositions using JavaScript and CSS. A creative coding project exploring symmetry, ornament, and algorithmic design.",
     demo: "https://art-deco-delta.vercel.app",
     tags: ["JavaScript", "CSS", "Creative Coding"],
+  },
+  {
+    repo: "rewrite",
+    description: "A browser-based writing assistant powered by Claude. Select any text, generate three alternatives, and click to replace. Supports a custom style guide to shape suggestions toward your preferred voice and tone.",
+    demo: "https://rewrite-virid.vercel.app",
+    tags: ["React", "TipTap", "Anthropic API", "Vercel"],
   },
 ];
 
