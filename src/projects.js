@@ -1,6 +1,6 @@
 // Curated list of projects to feature.
 // To add or remove a project, edit this file.
-~/projects-site/src / projects.js// 'repo' must match the exact GitHub repository name.
+// 'repo' must match the exact GitHub repository name.
 // 'demo' is optional — set to null if there's no live demo.
 
 const projects = [
